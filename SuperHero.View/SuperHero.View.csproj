@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A22FAF1-F286-406C-A598-64D17BA9FCB7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SuperHero.View</RootNamespace>
+    <AssemblyName>SuperHero.View</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashboardView.xaml.cs">
+      <DependentUpon>DashboardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Assets\HeroDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DashboardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuperHero.Common\SuperHero.Common.csproj">
+      <Project>{52C35692-9CF7-48EC-AD8C-90AE01AC2E94}</Project>
+      <Name>SuperHero.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SuperHero.Presentation\SuperHero.Presentation.csproj">
+      <Project>{D4EAB81D-38C0-4533-9EC1-61803B69C0A2}</Project>
+      <Name>SuperHero.Presentation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\Images\ant-man_logo.png" />
+    <Resource Include="Assets\Images\Aquaman_logo.png" />
+    <Resource Include="Assets\Images\Atom_Logo.png" />
+    <Resource Include="Assets\Images\Batman_Logo.png" />
+    <Resource Include="Assets\Images\Black_Widow_Logo.png" />
+    <Resource Include="Assets\Images\Captain_America_Logo.png" />
+    <Resource Include="Assets\Images\Cyclops_Logo.png" />
+    <Resource Include="Assets\Images\Daredevil_Logo.png" />
+    <Resource Include="Assets\Images\dc_logo.png" />
+    <Resource Include="Assets\Images\Green_Arrow_Logo.png" />
+    <Resource Include="Assets\Images\Green_Lantern_Logo.png" />
+    <Resource Include="Assets\Images\Hawkeye_Logo.png" />
+    <Resource Include="Assets\Images\Hawkman_Logo.png" />
+    <Resource Include="Assets\Images\Hulk_Logo.png" />
+    <Resource Include="Assets\Images\Human_Torch_Logo.png" />
+    <Resource Include="Assets\Images\Ironman_Logo.png" />
+    <Resource Include="Assets\Images\marvel_logo.png" />
+    <Resource Include="Assets\Images\Spiderman_Logo.png" />
+    <Resource Include="Assets\Images\Splash.png" />
+    <Resource Include="Assets\Images\Splash620x300.png" />
+    <Resource Include="Assets\Images\Storm_Logo.png" />
+    <Resource Include="Assets\Images\Supergirl_Logo.png" />
+    <Resource Include="Assets\Images\Superman_logo.png" />
+    <Resource Include="Assets\Images\The_Flash_Logo.png" />
+    <Resource Include="Assets\Images\Wolverine_Logo.png" />
+    <Resource Include="Assets\Images\Wonder_Woman_Logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

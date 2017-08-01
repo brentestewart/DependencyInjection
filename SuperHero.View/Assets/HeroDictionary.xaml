@@ -1,0 +1,137 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xmlns:common="clr-namespace:SuperHero.Common;assembly=SuperHero.Common"
+                    xmlns:arenas="clr-namespace:SuperHero.BattleResearch.Arenas;assembly=SuperHero.Common">
+
+    <BitmapImage x:Key="MarvelLogo" UriSource="/SuperHero.View;component/Assets/Images/marvel_logo.png"/>
+    <BitmapImage x:Key="DcLogo" UriSource="/SuperHero.View;component/Assets/Images/dc_logo.png"/>
+
+    <SolidColorBrush x:Key="HeroBlueBrush" Color="#1485CC" />
+    <SolidColorBrush x:Key="HeroRedBrush" Color="#7F0000"/>
+
+    <LinearGradientBrush x:Key="MainBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="LightGray" Offset="0"/>
+        <GradientStop Color="DarkGray" Offset=".2"/>
+        <GradientStop Color="White" Offset="1"/>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="DCBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#00C51D" Offset="0"/>
+        <GradientStop Color="#007522" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ListBackGround" Color="Transparent"/>
+
+    <LinearGradientBrush x:Key="MainBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF3A4A6C"/>
+        <GradientStop Color="#FF06132E" Offset="1"/>
+    </LinearGradientBrush>
+
+
+    <LinearGradientBrush x:Key="MarvelBackgroundBrush" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#AA0000" Offset="0"/>
+        <GradientStop Color="#880000" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="MarvelForegroundBrush" Color="Gold"/>
+
+    <Style x:Key="HeaderText" TargetType="Label">
+        <Setter Property="FontSize" Value="28"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS" />
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="HeroButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="Comic Sans MS"/>
+        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground" Value="AntiqueWhite"/>
+        <Setter Property="Height" Value="75"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Background" Value="#444444"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+
+    <SolidColorBrush x:Key="TextColor" Color="AntiqueWhite"/>
+
+    <Style x:Key="HeroHeader" TargetType="Label">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS" />
+        <Setter Property="Padding" Value="5,5,5,0"></Setter>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+    </Style>
+
+    <Style x:Key="HeroDetail" TargetType="Label">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontFamily" Value="Comic Sans MS" />
+        <Setter Property="Foreground" Value="{StaticResource TextColor}"/>
+    </Style>
+
+    <Style x:Key="HeroList" TargetType="ListView">
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled"/>
+        <Setter Property="Background" Value="{DynamicResource ListBackground}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel/>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="HeroContainerStyle" TargetType="ListViewItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <Border Name="HeroBorder" Background="#222222" Width="250" Margin="2" CornerRadius="3">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="{Binding LogoPath}" Width="48" Height="48" Margin="2"/>
+                            <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                                <Label Name="HeroName"  Style="{DynamicResource HeroHeader}" Content="{Binding HeroName}"/>
+                                <Label Style="{DynamicResource HeroDetail}" HorizontalAlignment="Center" Content="{Binding RealName}" Padding="0,0,0,5"/>
+                            </StackPanel>
+                            <Image HorizontalAlignment="Right" Grid.Column="2" Name="ComicUniverseImage" Source="{StaticResource DcLogo}" Width="50" Height="50"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Value="Marvel" Binding="{Binding Universe}">
+                            <Setter TargetName="ComicUniverseImage" Property="Source" Value="{StaticResource MarvelLogo}"/>
+                        </DataTrigger>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" TargetName="HeroBorder" Value="Green"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ArenaContainerStyle" TargetType="ListViewItem">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <Border Name="OuterBorder"  CornerRadius="3" Background="#222" HorizontalAlignment="Stretch" Margin="2">
+                        <Label Content="{Binding Description}" FontSize="16" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" TargetName="OuterBorder" Value="Green"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>

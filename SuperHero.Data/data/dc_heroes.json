@@ -1,0 +1,707 @@
+﻿[
+  {
+    "HeroName": "Ant-Man",
+    "RealName": "Scott Lang",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 200,
+    "Defense": 500,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/ant-man_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Black Widow",
+    "RealName": "Natasha Romanovo",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Black_Widow_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Captain America",
+    "RealName": "Steve Rogers",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Captain_America_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Cyclops",
+    "RealName": "Scott Summers",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Cyclops_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Daredevil",
+    "RealName": "Matt Murdock",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Daredevil_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Hawkeye",
+    "RealName": "Clint Barton",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Hawkeye_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Hulk",
+    "RealName": "Bruce Banner",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 999,
+    "Defense": 100,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Hulk_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Human Torch",
+    "RealName": "Johnny Storm",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Human_Torch_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Ironman",
+    "RealName": "Tony Stark",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Ironman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Spiderman",
+    "RealName": "Peter Parker",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 900,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Spiderman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Storm",
+    "RealName": "Ororo Munrow",
+    "Universe": 0,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Storm_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Wolverine",
+    "RealName": "James Howlett",
+    "Universe": 0,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Wolverine_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Aquaman",
+    "RealName": "Arthur Curry",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Aquaman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Atom",
+    "RealName": "Ray Palmer",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Atom_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Batman",
+    "RealName": "Bruce Wayne",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Batman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Green Arrow",
+    "RealName": "Oliver Queen",
+    "Universe": 1,
+    "HeroType": 1,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Green_Arrow_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Green Lantern",
+    "RealName": "Hal Jordan",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Green_Lantern_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Hawkman",
+    "RealName": "Carter Hall",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Hawkman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Supergirl",
+    "RealName": "Kara Zor-El",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 700,
+    "Defense": 700,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Supergirl_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Superman",
+    "RealName": "Clark Kent",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 900,
+    "Defense": 900,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Superman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "The Flash",
+    "RealName": "Barry Allen",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 800,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/The_Flash_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  },
+  {
+    "HeroName": "Wonder Woman",
+    "RealName": "Diana Prince",
+    "Universe": 1,
+    "HeroType": 0,
+    "Health": 300,
+    "Defense": 300,
+    "LogoPath": "pack://application:,,,/SuperHero.View;component/Assets/Images/Wonder_Woman_Logo.png",
+    "FightingSkills": {
+      "Unarmed": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "BowAndArrow": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Knife": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      },
+      "Sword": {
+        "MinDamage": 0,
+        "MaxDamage": 100
+      }
+    },
+    "EnvironmentSkills": {
+      "IsDark": 50,
+      "IsOuterSpace": 50,
+      "IsUnderwater": 50
+    }
+  }
+]
+
