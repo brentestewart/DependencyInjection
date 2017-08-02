@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factories\HeroFactory.cs" />
     <Compile Include="FileServices\AllHeroJsonDataService.cs" />
     <Compile Include="StaticServices\AllHeroStaticDataService.cs" />
     <Compile Include="StaticServices\BaseHeroStaticDataService.cs" />

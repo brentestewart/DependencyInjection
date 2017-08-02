@@ -10,10 +10,10 @@ namespace SuperHero.View
     {
         public DashboardViewModel ViewModel { get; set; }
 
-        public DashboardView(DashboardViewModel viewModel)
+        public DashboardView()
         {
             InitializeComponent();
-            DataContext = ViewModel = viewModel;
+            DataContext = ViewModel = new DashboardViewModel();
         }
     }
 }

@@ -15,15 +15,20 @@ namespace SuperHero.Presentation.Tests
         public void Initialize()
         {
             HeroMock = new Mock<IHeroRepository>();
-            HeroMock.Setup(r => r.GetAllHeroes()).Returns(new List<IHero>());
             HeroRepository = HeroMock.Object;
 
         }
 
         [TestMethod]
-        public void Constructor_ShouldCallRepositoryGetAllHeroesMethod()
+        public void Constructor_ShouldCallRepositoryGetAllHeroesMethod_Always()
         {
-            var viewModel = new DashboardViewModel(HeroRepository);
+            //Arange
+            HeroMock.Setup(r => r.GetAllHeroes()).Returns(new List<IHero>());
+            
+            //Act
+            var viewModel = new DashboardViewModel();
+
+            //Assert
             HeroMock.Verify(r => r.GetAllHeroes(), Times.Once);
         }
     }

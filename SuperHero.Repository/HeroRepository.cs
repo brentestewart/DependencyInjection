@@ -3,6 +3,7 @@ using System.Linq;
 using SuperHero.Common;
 using SuperHero.Data;
 using SuperHero.Data.Factories;
+using SuperHero.Data.FileServices;
 
 namespace SuperHero.Repository
 {
@@ -11,10 +12,10 @@ namespace SuperHero.Repository
         public IHeroFactory HeroFactory { get; set; }
         private IHeroDataService DataService { get; set; }
 
-        public HeroRepository(IHeroDataService dataService)
+        public HeroRepository()
         {
-            DataService = dataService;
-            HeroFactory = HeroServiceLocator.Resolve<IHeroFactory>();
+            DataService = new DCHeroJsonDataService();
+            HeroFactory = new HeroFactory();
         }
 
         public List<IHero> GetAllHeroes()
