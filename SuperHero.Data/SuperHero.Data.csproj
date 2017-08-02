@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllHeroJsonDataService.cs" />
-    <Compile Include="AllHeroStaticDataService.cs" />
-    <Compile Include="BaseHeroStaticDataService.cs" />
-    <Compile Include="BaseJsonDataService.cs" />
-    <Compile Include="DCHeroJsonDataService.cs" />
-    <Compile Include="DCHeroStaticDataService.cs" />
+    <Compile Include="FileServices\AllHeroJsonDataService.cs" />
+    <Compile Include="StaticServices\AllHeroStaticDataService.cs" />
+    <Compile Include="StaticServices\BaseHeroStaticDataService.cs" />
+    <Compile Include="FileServices\BaseJsonDataService.cs" />
+    <Compile Include="FileServices\DCHeroJsonDataService.cs" />
+    <Compile Include="StaticServices\DCHeroStaticDataService.cs" />
     <Compile Include="Factories\IHeroFactory.cs" />
     <Compile Include="HeroServiceLocator.cs" />
-    <Compile Include="MarvelHeroJsonDataService.cs" />
-    <Compile Include="MarvelHeroStaticDataService.cs" />
+    <Compile Include="FileServices\MarvelHeroJsonDataService.cs" />
+    <Compile Include="StaticServices\MarvelHeroStaticDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

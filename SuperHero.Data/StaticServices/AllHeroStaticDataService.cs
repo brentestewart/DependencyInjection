@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using SuperHero.Common;
 
-namespace SuperHero.Data
+namespace SuperHero.Data.StaticServices
 {
     public class AllHeroStaticDataService : BaseHeroStaticDataService
     {

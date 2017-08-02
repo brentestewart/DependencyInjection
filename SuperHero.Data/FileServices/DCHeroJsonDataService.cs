@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SuperHero.Common;
 
-namespace SuperHero.Data
+namespace SuperHero.Data.FileServices
 {
     public class DCHeroJsonDataService : BaseJsonDataService
     {

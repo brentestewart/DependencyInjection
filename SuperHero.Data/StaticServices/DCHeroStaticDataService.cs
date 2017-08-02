@@ -2,9 +2,9 @@
 using System.Linq;
 using SuperHero.Common;
 
-namespace SuperHero.Data
+namespace SuperHero.Data.StaticServices
 {
-    public class DCHeroStaticDataService : BaseHeroStaticDataService
+	public class DCHeroStaticDataService : BaseHeroStaticDataService
 	{
 		public override IEnumerable<HeroDto> GetHeroes()
 		{

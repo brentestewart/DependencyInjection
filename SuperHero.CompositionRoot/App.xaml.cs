@@ -4,6 +4,7 @@ using Ninject.Extensions.Factory;
 using SuperHero.Common;
 using SuperHero.Data;
 using SuperHero.Data.Factories;
+using SuperHero.Data.StaticServices;
 using SuperHero.Repository;
 using SuperHero.View;
 

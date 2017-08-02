@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using SuperHero.Common;
 
-namespace SuperHero.Data
+namespace SuperHero.Data.StaticServices
 {
     public abstract class BaseHeroStaticDataService : IHeroDataService
     {

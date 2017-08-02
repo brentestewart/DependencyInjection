@@ -4,7 +4,7 @@ using System.Linq;
 using Newtonsoft.Json;
 using SuperHero.Common;
 
-namespace SuperHero.Data
+namespace SuperHero.Data.FileServices
 {
     public abstract class BaseJsonDataService : IHeroDataService
     {
