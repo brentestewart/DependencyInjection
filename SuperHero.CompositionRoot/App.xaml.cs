@@ -31,6 +31,7 @@ namespace SuperHero.CompositionRoot
             SetupContainer();
 
             SetupFights();
+
             this.MainWindow = Container.Get<DashboardView>();
             this.MainWindow.Show();
         }
