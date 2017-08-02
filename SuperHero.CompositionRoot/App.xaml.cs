@@ -1,15 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using Ninject;
 using Ninject.Extensions.Factory;
-using SuperHero.BattleResearch;
-using SuperHero.BattleResearch.FightAlgorithms;
 using SuperHero.Common;
 using SuperHero.Data;
 using SuperHero.Data.Factories;
@@ -18,9 +9,6 @@ using SuperHero.View;
 
 namespace SuperHero.CompositionRoot
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
     public partial class App : Application
     {
         public IKernel Container { get; set; }
@@ -39,7 +27,6 @@ namespace SuperHero.CompositionRoot
         private void SetupFights()
         {
             //Inject the fight algorithm
-            //FightArena.FightAlgorithm = Algorithms.SimpleParticipantOneWins;
             //Battle.FightAlgorithm = new PaticipantTwoWinsFightAlgorithm();
         }
 
@@ -47,14 +34,14 @@ namespace SuperHero.CompositionRoot
         {
             Container = new StandardKernel();
             Container.Bind<IHero>().To<Hero>();
-            Container.Bind<IHeroRepository>().To<DCHeroRepository>();
+            Container.Bind<IHeroRepository>().To<HeroRepository>();
             Container.Bind<IHeroFactory>().ToFactory();
-            Container.Bind<IHeroDataService>().To<DCHeroJsonDataService>().InSingletonScope();
-            Container.Bind<IWeapon>().To<BowAndArrow>().InSingletonScope();
-            Container.Bind<IAttack>().To<Shoot>().InSingletonScope();
+            Container.Bind<IHeroDataService>().To<AllHeroStaticDataService>().InSingletonScope();
+            Container.Bind<IWeapon>().To<Unarmed>().InSingletonScope();
+            Container.Bind<IAttack>().To<Punch>().InSingletonScope();
 
-            var heroDataService = Container.Get<IHeroDataService>();
-            HeroServiceLocator.Register<IHeroDataService>(() => heroDataService);
+            var heroFactory = Container.Get<IHeroFactory>();
+            HeroServiceLocator.Register<IHeroFactory>(() => heroFactory);
         }
     }
 }

@@ -1,25 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using SuperHero.Common;
 using SuperHero.Data;
 using SuperHero.Data.Factories;
 
 namespace SuperHero.Repository
 {
-    public class DCHeroRepository : IHeroRepository
+    public class HeroRepository : IHeroRepository
     {
         public IHeroFactory HeroFactory { get; set; }
         private IHeroDataService DataService { get; set; }
 
-        public DCHeroRepository(IHeroFactory heroFactory)
+        public HeroRepository(IHeroDataService dataService)
         {
-            //DataService = new DCHeroStaticDataService();
-            //DataService = new DCHeroJsonDataService();
-            HeroFactory = heroFactory;
-            DataService = HeroServiceLocator.Resolve<IHeroDataService>();
+            DataService = dataService;
+            HeroFactory = HeroServiceLocator.Resolve<IHeroFactory>();
         }
 
         public List<IHero> GetAllHeroes()

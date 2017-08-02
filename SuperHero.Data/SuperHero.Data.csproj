@@ -46,10 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllHeroJsonDataService.cs" />
+    <Compile Include="AllHeroStaticDataService.cs" />
+    <Compile Include="BaseHeroStaticDataService.cs" />
+    <Compile Include="BaseJsonDataService.cs" />
     <Compile Include="DCHeroJsonDataService.cs" />
     <Compile Include="DCHeroStaticDataService.cs" />
     <Compile Include="Factories\IHeroFactory.cs" />
     <Compile Include="HeroServiceLocator.cs" />
+    <Compile Include="MarvelHeroJsonDataService.cs" />
+    <Compile Include="MarvelHeroStaticDataService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +66,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="data\dc_heroes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="data\marvel_heroes.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
