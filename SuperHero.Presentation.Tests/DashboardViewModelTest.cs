@@ -20,7 +20,7 @@ namespace SuperHero.Presentation.Tests
         }
 
         [TestMethod]
-        public void Constructor_ShouldCallRepositoryGetAllHeroesMethod()
+        public void Constructor_ShouldCallRepositoryGetAllHeroesMethodOnce_Always()
         {
             //Arange
             HeroMock.Setup(r => r.GetAllHeroes()).Returns(new List<IHero>());
