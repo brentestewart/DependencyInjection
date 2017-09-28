@@ -5,6 +5,7 @@ using Prism.Commands;
 using PropertyChanged;
 using SuperHero.BattleResearch;
 using SuperHero.BattleResearch.Arenas;
+using SuperHero.Repository;
 
 namespace SuperHero.Presentation
 {
@@ -21,9 +22,9 @@ namespace SuperHero.Presentation
         public bool HaveResults { get; set; }
         public DelegateCommand FightCommand { get; set; }
 
-        public DashboardViewModel(IHeroRepository heroRepository)
+        public DashboardViewModel()
         {
-            HeroRepository = heroRepository;
+            HeroRepository = new HeroRepository();
             FightCommand = new DelegateCommand(Fight);
 
             LoadArenas();

@@ -127,6 +127,10 @@
       <Project>{358981ED-2393-4BBF-B690-86800BF1005E}</Project>
       <Name>SuperHero.BattleResearch</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SuperHero.Presentation\SuperHero.Presentation.csproj">
+      <Project>{D4EAB81D-38C0-4533-9EC1-61803B69C0A2}</Project>
+      <Name>SuperHero.Presentation</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SuperHero.Repository\SuperHero.Repository.csproj">
       <Project>{41EACE42-3A91-4023-B49A-115C26887ACD}</Project>
       <Name>SuperHero.Repository</Name>
